@@ -36,10 +36,39 @@ namespace GUI_Group_Project
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        
+
+        private void btnmenu_Click(object sender, RoutedEventArgs e)
         {
-            NewGuest NG = new NewGuest();
-            NG.Show();
+            Restaurant_Menu menu = new Restaurant_Menu();
+            menu.Show();
+            this.Close();
+        }
+
+        private void btnres_Click(object sender, RoutedEventArgs e)
+        {
+            Reservation res = new Reservation();
+            res.Show();
+            this.Close();
+        }
+
+        private void btnreg_Click(object sender, RoutedEventArgs e)
+        {
+            Registration reg = new Registration();
+            reg.Show();
+            this.Close();
+        }
+
+        private void btnpay_Click(object sender, RoutedEventArgs e)
+        {
+            Payments pay = new Payments();
+            pay.Show();
+            this.Close();
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
             this.Close();
         }
     }

@@ -9,15 +9,15 @@
     <Grid>
         <Image Source="images/1.jpg" Stretch="Fill"></Image>
         <StackPanel>
-            <Button Content="Log Out" Style="{StaticResource buttonCurve}" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" FontWeight="Bold" FontSize="20"></Button>
+            <Button Content="Log Out" Style="{StaticResource buttonCurve}" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" FontWeight="Bold" FontSize="20" FontFamily="Sitka Small" Click="Button_Click_1"></Button>
         </StackPanel>
         <StackPanel VerticalAlignment="Center">
             
-            <Button Style="{StaticResource buttonCurve}" Content="Restaurant Menu" Margin="10" Width="300" Height="80" FontWeight="ExtraBold" FontSize="30"></Button>
-            <Button  Style="{StaticResource buttonCurve}" Content="Reservations" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30"></Button>
-            <Button Style="{StaticResource buttonCurve}" Content="Registrations" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30"></Button>
+            <Button x:Name="btnmenu" Style="{StaticResource buttonCurve}" Content="Restaurant Menu" Margin="10" Width="300" Height="80" FontWeight="ExtraBold" FontSize="30" Click="btnmenu_Click"></Button>
+            <Button x:Name="btnres" Style="{StaticResource buttonCurve}" Content="Reservations" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30" Click="btnres_Click"></Button>
+            <Button x:Name="btnreg" Style="{StaticResource buttonCurve}" Content="Registrations" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30" Click="btnreg_Click"></Button>
 
-            <Button Style="{StaticResource buttonCurve}" Content="Payements" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30"></Button>
+            <Button x:Name="btnpay" Style="{StaticResource buttonCurve}" Content="Payments" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30" Click="btnpay_Click"></Button>
 
         </StackPanel>
     </Grid>

@@ -9,16 +9,17 @@
     <Grid>
         <Image Source="images/ll.jpg" Stretch="Fill"></Image>
         <StackPanel VerticalAlignment="Center">
-            <DockPanel HorizontalAlignment="Center">
+            <DockPanel HorizontalAlignment="Center" Margin="5">
                 <Image Height="50" Width="50" Source="images/profile-user.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBox x:Name="txtuser"  Height="60" TextWrapping="Wrap" VerticalAlignment="Center" Width="300" Text=" Username" Opacity="0.65" FontSize="20" VerticalContentAlignment="Center" />
             </DockPanel>
-            <DockPanel HorizontalAlignment="Center">
+            <DockPanel HorizontalAlignment="Center" Margin="5">
                 <Image Height="50" Width="50" Source="images/4.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBox x:Name="txtpassword" Height="60" TextWrapping="Wrap" VerticalAlignment="Center" Width="300" Text=" Password" Opacity="0.65" FontSize="20" VerticalContentAlignment="Center" />
             </DockPanel>
-            <DockPanel HorizontalAlignment="Center">
-                <Button x:Name="btnLogin" Content="Log In" Style="{StaticResource buttonCurve}" Height="65" HorizontalAlignment="Center" VerticalAlignment="Center" Width="355" Click="btnLogin_Click" Margin="10" FontWeight="Bold" FontSize="25" FontFamily="Palatino Linotype" Background="Black" Foreground="Gray"/>
+            <DockPanel HorizontalAlignment="Center" Margin="5">
+                <Button x:Name="btnLogin" Content="Log In" Style="{StaticResource buttonCurve}" Height="65" HorizontalAlignment="Center" VerticalAlignment="Center" Width="173" Click="btnLogin_Click" Margin="10" FontWeight="Bold" FontSize="25" FontFamily="Palatino Linotype" Background="Black" Foreground="Gray"/>
+                <Button x:Name="btnexit" Content="Exit" Style="{StaticResource buttonCurve}" Height="65" HorizontalAlignment="Center" VerticalAlignment="Center" Width="162"  Margin="10" FontWeight="Bold" FontSize="25" FontFamily="Palatino Linotype" Background="Salmon" Foreground="DarkRed" Click="btnexit_Click"/>
             </DockPanel>
 
 

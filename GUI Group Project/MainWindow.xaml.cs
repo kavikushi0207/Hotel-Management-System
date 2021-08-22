@@ -42,6 +42,9 @@ namespace GUI_Group_Project
             }
         }
 
-       
+        private void btnexit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

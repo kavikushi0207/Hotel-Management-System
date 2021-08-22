@@ -15,29 +15,34 @@ using System.Windows.Shapes;
 namespace GUI_Group_Project
 {
     /// <summary>
-    /// Interaction logic for NewGuest.xaml
+    /// Interaction logic for Restaurant_Menu.xaml
     /// </summary>
-    public partial class NewGuest : Window
+    public partial class Restaurant_Menu : Window
     {
-        public NewGuest()
+        public Restaurant_Menu()
         {
             InitializeComponent();
         }
 
-        private void btnback_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DashBoard DB = new DashBoard();
-            DB.Show();
+            Add_New_Menu_Item addmenu = new Add_New_Menu_Item();
+            addmenu.Show();
             this.Close();
         }
 
-        private void btnLogOut_Click(object sender, RoutedEventArgs e)
+        private void btnback_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow login = new MainWindow();
-            login.Show();
-            login.txtpassword.Clear();
-            login.txtuser.Clear();
+            DashBoard db = new DashBoard();
+            db.Show();
             this.Close();
         }
+
+        private void btnlogout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        
     }
 }
