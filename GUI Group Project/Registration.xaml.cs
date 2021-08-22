@@ -23,5 +23,34 @@ namespace GUI_Group_Project
         {
             InitializeComponent();
         }
+
+        private void btnback_Click(object sender, RoutedEventArgs e)
+        {
+            DashBoard db = new DashBoard();
+            db.Show();
+            this.Close();
+
+        }
+
+        private void btnlogout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btncus_Click(object sender, RoutedEventArgs e)
+        {
+            Customer_Registration cr = new Customer_Registration();
+            cr.Show();
+            this.Close();
+        }
+
+       
+
+        private void btnemp_Click_1(object sender, RoutedEventArgs e)
+        {
+            Employee_Registration er = new Employee_Registration();
+            er.Show();
+            this.Close();
+        }
     }
 }

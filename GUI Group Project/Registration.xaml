@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Group_Project"
         mc:Ignorable="d"
-        Title="Registration" Height="450" Width="800">
+        Title="Registration" Height="787.113" Width="1378.351" ResizeMode="CanMinimize" WindowState="Maximized">
     <Grid>
-        
+        <Image Source="images/9.jpg" Stretch="Fill"></Image>
+        <StackPanel>
+            <StackPanel Margin="20">
+                <DockPanel>
+                    <Button x:Name="btnback" Content="Back" Style="{StaticResource buttonCurve}" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" FontWeight="Bold" FontSize="20"  Click="btnback_Click"></Button>
+
+                    <Button x:Name="btnlogout" Content="Log Out" Style="{StaticResource buttonCurve}" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" FontWeight="Bold" FontSize="20"  Click="btnlogout_Click"></Button>
+
+                </DockPanel>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left"  Opacity=".75" Margin="200" >
+                <Button x:Name="btncus" Style="{StaticResource buttonCurve1}"  Content="Customers" Margin="10" Width="300" Height="100" FontWeight="ExtraBold" FontSize="30" Click="btncus_Click" ></Button>
+                <Button x:Name="btnemp" Style="{StaticResource buttonCurve1}"  Content="Employees" Margin="10" Width="300" Height=" 100" FontWeight="ExtraBold" FontSize="30" Click="btnemp_Click_1" ></Button>
+
+            </StackPanel>
+        </StackPanel>
+
+
+
     </Grid>
 </Window>

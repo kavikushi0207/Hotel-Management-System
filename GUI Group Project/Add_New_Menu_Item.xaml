@@ -5,18 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Group_Project"
         mc:Ignorable="d"
-        Title="Add_New_Menu_Item" Height="450" Width="800" ResizeMode="CanMinimize" WindowState="Maximized">
+        Title="Add_New_Menu_Item" Height="651" Width="817" ResizeMode="CanMinimize" WindowState="Maximized">
     <Grid>
-        <Image Source="images/addmenu.jpg" Stretch="Fill" Opacity=".8"></Image>
-        <StackPanel HorizontalAlignment="Center">
-            <Label Content="New Menu Item" HorizontalAlignment="Left" Foreground="White"></Label>
-        </StackPanel>
+        <Image Source="images/0.jpg" Stretch="Fill" Opacity="1"></Image>
         <StackPanel>
-            <DockPanel>
-                <Label></Label>
-                <TextBox></TextBox>
-            </DockPanel>
+            <StackPanel Margin="10">
+                <DockPanel>
+                    <Button x:Name="btnback" Content="Back" Style="{StaticResource buttonCurve}" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" FontWeight="Bold" FontSize="20"  Click="btnback_Click"></Button>
+                    <Button x:Name="btnlogout" Content="Log Out" Style="{StaticResource buttonCurve}" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" FontWeight="Bold" FontSize="20"  Click="btnlogout_Click"></Button>
+
+                </DockPanel>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center">
+                <Label Content="New Menu Item" HorizontalAlignment="Center" Foreground="White" Width="300" VerticalAlignment="Center"  FontWeight="Bold" FontStyle="Italic" FontSize="35"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,-2,0">
+                <Grid Background="Gray" Opacity=".75" Margin="168,100,0,0" Height="234" HorizontalAlignment="Left" >
+
+                    <StackPanel>
+                        <DockPanel Margin="5" HorizontalAlignment="Center">
+                            <Label Content="Meal Type           :" Style="{StaticResource labelstyle}" />
+                            <ComboBox Height="30" Width="391" Margin="0,2,0,1" FontSize="18">
+                                <ComboBoxItem>Breakfast</ComboBoxItem>
+                                <ComboBoxItem>Lunch</ComboBoxItem>
+                                <ComboBoxItem>Tea-Time</ComboBoxItem>
+                                <ComboBoxItem>Dinner</ComboBoxItem>
+                            </ComboBox>
+                        </DockPanel>
+                        <DockPanel Margin="5" HorizontalAlignment="Center">
+                            <Label Content="Item Type            :" Style="{StaticResource labelstyle}" />
+                            <ComboBox Height="30" Width="391" Margin="0,2,0,1" FontSize="18">
+                                <ComboBoxItem>Starter</ComboBoxItem>
+                                <ComboBoxItem>Main Dish</ComboBoxItem>
+                                <ComboBoxItem>Side Dish</ComboBoxItem>
+                                <ComboBoxItem>Deserts</ComboBoxItem>
+                                <ComboBoxItem>Drinks</ComboBoxItem>
+                                <ComboBoxItem>Fast Foods</ComboBoxItem>
+                            </ComboBox>
+                        </DockPanel>
+                        <DockPanel Margin="5" HorizontalAlignment="Center">
+                            <Label Content="Item Name          :" Style="{StaticResource labelstyle}" />
+                            <TextBox Height="30" Width="391" Margin="0,2,0,1" ></TextBox>
+                        </DockPanel>
+                        <DockPanel Margin="5" HorizontalAlignment="Center">
+                            <Label Content="Item Price            :" Style="{StaticResource labelstyle}" />
+                            <TextBox Height="30" Width="391" Margin="0,2,0,1" ></TextBox>
+                        </DockPanel>
+                        <DockPanel Margin="10" HorizontalAlignment="Center">
+                            <Button Content="Add" Style="{StaticResource buttonCurve}" Height="30" Width="200" Background="GreenYellow" Foreground="Black" Margin="10" FontSize="18"></Button>
+                            <Button Content="Cancel" Style="{StaticResource buttonCurve}" Height="30" Width="200" Background="Salmon" Foreground="Black" Margin="10" FontSize="18"></Button>
+
+
+
+                        </DockPanel>
+                    </StackPanel>
+
+
+
+
+
+                </Grid>
+
+            </StackPanel>
         </StackPanel>
-        
+
+
     </Grid>
 </Window>

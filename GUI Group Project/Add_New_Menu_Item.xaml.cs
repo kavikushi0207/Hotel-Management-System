@@ -23,5 +23,17 @@ namespace GUI_Group_Project
         {
             InitializeComponent();
         }
+
+        private void btnlogout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnback_Click(object sender, RoutedEventArgs e)
+        {
+            Restaurant_Menu menu = new Restaurant_Menu();
+            menu.Show();
+            this.Close();
+        }
     }
 }

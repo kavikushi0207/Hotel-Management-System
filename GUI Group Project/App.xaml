@@ -27,6 +27,11 @@
             </Style.Resources>
 
         </Style>
+        <Style x:Key="labelstyle" TargetType="Label">
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="FontSize" Value="17"/>
+            
+        </Style>
          
     </Application.Resources>
 </Application>

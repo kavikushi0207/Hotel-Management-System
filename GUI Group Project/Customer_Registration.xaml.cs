@@ -15,25 +15,24 @@ using System.Windows.Shapes;
 namespace GUI_Group_Project
 {
     /// <summary>
-    /// Interaction logic for Reservation.xaml
+    /// Interaction logic for Customer_Registration.xaml
     /// </summary>
-    public partial class Reservation : Window
+    public partial class Customer_Registration : Window
     {
-        public Reservation()
+        public Customer_Registration()
         {
             InitializeComponent();
         }
 
-        private void btnback_Click(object sender, RoutedEventArgs e)
-        {
-            DashBoard db = new DashBoard();
-            db.Show();
-            this.Close();
-
-        }
-
         private void btnlogout_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void btnback_Click(object sender, RoutedEventArgs e)
+        {
+            Registration r = new Registration();
+            r.Show();
             this.Close();
         }
     }

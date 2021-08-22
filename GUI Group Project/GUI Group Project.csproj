@@ -58,6 +58,12 @@
     <Compile Include="Add_New_Menu_Item.xaml.cs">
       <DependentUpon>Add_New_Menu_Item.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Customer_Registration.xaml.cs">
+      <DependentUpon>Customer_Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Registration.xaml.cs">
+      <DependentUpon>Employee_Registration.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
@@ -77,7 +83,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Customer_Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DashBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employee_Registration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -185,6 +199,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\b.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
