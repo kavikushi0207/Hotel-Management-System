@@ -64,6 +64,9 @@
     <Compile Include="Employee_Registration.xaml.cs">
       <DependentUpon>Employee_Registration.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Hall Reservation.xaml.cs">
+      <DependentUpon>Hall Reservation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,9 @@
     </Compile>
     <Compile Include="Restaurant_Menu.xaml.cs">
       <DependentUpon>Restaurant_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Room_Reservation.xaml.cs">
+      <DependentUpon>Room_Reservation.xaml</DependentUpon>
     </Compile>
     <Compile Include="Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
@@ -92,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Employee_Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hall Reservation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Restaurant_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Room_Reservation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -214,6 +228,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\d.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\f.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
