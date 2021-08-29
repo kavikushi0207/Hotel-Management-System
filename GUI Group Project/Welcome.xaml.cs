@@ -26,9 +26,28 @@ namespace GUI_Group_Project
 
         private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
+            /*pbar.Visibility = Visibility.Visible;
+            btnLoad.Content = "Loading...";
+            pbar.Value = 0;
+            Task.Run(() =>
+            {
+                for(int i=0;i<100;i++)
+                {
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        pbar.Value = i;
+
+                    }
+                        );
+                }
+            }
+
+                );*/
+          
             MainWindow login = new MainWindow();
             login.Show();
             this.Close();
+
         }
     }
 }

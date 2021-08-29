@@ -9,6 +9,7 @@
             <Setter Property="Background" Value="Black"/>
             <Setter Property="Foreground" Value="Gray"/>
             <Setter Property="FontFamily" Value="Sitka Small"/>
+            <Setter Property="BorderThickness" Value="3"/>
             <Style.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>

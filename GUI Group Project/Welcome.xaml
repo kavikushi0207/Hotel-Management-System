@@ -8,10 +8,14 @@
         Title="Welcome" Height="450" Width="800" Icon="images/opportunity.png" ResizeMode="CanMinimize" WindowState="Maximized"  >
     <Grid>
         <Image Source="images/wel.jpg" Stretch="Fill" Opacity="0.8"></Image>
-       
+
         <StackPanel VerticalAlignment="Center">
-            <Button x:Name="btnLoad" VerticalAlignment="Center" Style="{StaticResource buttonCurve1}" Content="Get Started"  HorizontalAlignment="Center" Margin="344,0,245,0" Width="205" Click="btnLoad_Click" FontSize="36" Height="73" FontFamily="Tempus Sans ITC" FontWeight="Bold" Background="LightGray"/>
+            <TextBlock Text="Hey, have a nice day!" FontWeight="Bold" FontSize="30" FontFamily="Viner Hand ITC" Foreground="AliceBlue" HorizontalAlignment="Center" Margin="274,0,187,15" Width="333" ></TextBlock>
+            <Button x:Name="btnLoad" VerticalAlignment="Center" Style="{StaticResource buttonCurve1}" Content="Get Started"  HorizontalAlignment="Center" Margin="301,0,272,0" Width="221" Click="btnLoad_Click" FontSize="36" Height="54" FontFamily="Tempus Sans ITC" FontWeight="Bold" Background="LightGray"/>
+            <ProgressBar x:Name="pbar" Minimum="0" Maximum="100" Height="20" Margin="0,10,0,20" Value="0" Visibility="Hidden" />
+
         </StackPanel>
+
 
     </Grid>
 </Window>
