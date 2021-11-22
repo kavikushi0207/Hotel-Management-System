@@ -24,15 +24,17 @@ namespace GUI_Group_Project
             InitializeComponent();
         }
 
-        private void btnback_Click(object sender, RoutedEventArgs e)
-        {
-            Reservation r = new Reservation();
-            r.Show();
-            this.Close();
-        }
+      
 
         private void btnlogout_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Reservation r = new Reservation();
+            r.Show();
             this.Close();
         }
     }

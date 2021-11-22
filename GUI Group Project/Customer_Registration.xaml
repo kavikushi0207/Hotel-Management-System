@@ -44,7 +44,7 @@
                 <TextBox Width="250"></TextBox>
             </DockPanel>
             <DockPanel Margin="10">
-                <Button Content="Add" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="GreenYellow" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,10,10,10" Click="Button_Click"/>
+                <Button Content="Add" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="GreenYellow" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,10,10,10" />
                 <Button Content="Update" Style="{StaticResource buttonCurve1}" Height="51" Width="210" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,10,10,10" />
                 <Button Content="Delete" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="PaleVioletRed" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,10,10,10"/>
                 <Button Content="Cancel" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="LightGray" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,10,10,10"/>
