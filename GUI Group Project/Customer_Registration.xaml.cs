@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace GUI_Group_Project
 {
@@ -35,5 +36,7 @@ namespace GUI_Group_Project
             r.Show();
             this.Close();
         }
+
+      
     }
 }
