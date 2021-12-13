@@ -15,33 +15,25 @@ using System.Windows.Shapes;
 namespace GUI_Group_Project
 {
     /// <summary>
-    /// Interaction logic for Employee_Registration.xaml
+    /// Interaction logic for Meetings.xaml
     /// </summary>
-    public partial class Employee_Registration : Window
+    public partial class Meetings : Window
     {
-        public Employee_Registration()
+        public Meetings()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Reservation r = new Reservation();
+            r.Show();
+            this.Close();
         }
 
         private void btnlogout_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-
-        private void btnback_Click(object sender, RoutedEventArgs e)
-        {
-            Registration r = new Registration();
-            r.Show();
-            this.Close();
-        }
-
-        private void ID_Emp(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(" Your Employer ID :");
-        }
-
-       
-        
     }
 }

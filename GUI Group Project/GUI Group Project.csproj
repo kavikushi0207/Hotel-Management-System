@@ -187,11 +187,18 @@
       <DependentUpon>Customer_Registration.xaml</DependentUpon>
     </Compile>
     <Compile Include="Database\HotelDBContext.cs" />
+    <Compile Include="Dj_s.xaml.cs">
+      <DependentUpon>Dj_s.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Employee_Registration.xaml.cs">
       <DependentUpon>Employee_Registration.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Employer.cs" />
     <Compile Include="Hall Reservation.xaml.cs">
       <DependentUpon>Hall Reservation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Meetings.xaml.cs">
+      <DependentUpon>Meetings.xaml</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202108292312549_first.cs" />
     <Compile Include="Migrations\202108292312549_first.designer.cs">
@@ -217,6 +224,9 @@
     <Compile Include="Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Page Include="Add_New_Menu_Item.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -226,6 +236,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DashBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dj_s.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -252,6 +266,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Meetings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Payments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -273,6 +291,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Welcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

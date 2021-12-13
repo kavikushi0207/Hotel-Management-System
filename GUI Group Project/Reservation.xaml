@@ -18,11 +18,12 @@
 
                 </DockPanel>
             </StackPanel>
-            <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Opacity=".75" Margin="200" >
-                <Button x:Name="btnroom" Style="{StaticResource buttonCurve1}"  Content="Rooms" Margin="20" Width="300" Height="100" FontWeight="ExtraBold" FontSize="30" Click="btnroom_Click" ></Button>
-                <Button x:Name="btnhall" Style="{StaticResource buttonCurve1}"  Content="Banquet Halls" Margin="10" Width="300" Height=" 100" FontWeight="ExtraBold" FontSize="30" Click="btnhall_Click" ></Button>
-
-            </DockPanel>
+            <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Opacity=".75" Margin="50" >
+                <Button x:Name="btnroom" Style="{StaticResource buttonCurve1}"  Content="Rooms" Margin="40" Width="300" Height="100" FontWeight="ExtraBold" FontSize="30" Click="btnroom_Click" ></Button>
+                <Button x:Name="btnhall" Style="{StaticResource buttonCurve1}"  Content="Banquet Halls" Margin="40" Width="300" Height=" 100" FontWeight="ExtraBold" FontSize="30" Click="btnhall_Click" ></Button>
+                <Button x:Name="btndj" Style="{StaticResource buttonCurve1}"  Content="DJ's" Margin="40" Width="300" Height="100" FontWeight="ExtraBold" FontSize="30" Click="btndj_Click" ></Button>
+                <Button x:Name="btnmeet" Style="{StaticResource buttonCurve1}"  Content="Meetings" Margin="40" Width="300" Height="100" FontWeight="ExtraBold" FontSize="30" Click="btnmeet_Click" ></Button>
+            </WrapPanel>
         </StackPanel>
     </Grid>
 

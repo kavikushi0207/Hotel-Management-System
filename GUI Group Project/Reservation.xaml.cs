@@ -50,5 +50,19 @@ namespace GUI_Group_Project
             hr.Show();
             this.Close();
         }
+
+        private void btndj_Click(object sender, RoutedEventArgs e)
+        {
+            Dj_s hr = new Dj_s();
+            hr.Show();
+            this.Close();
+        }
+
+        private void btnmeet_Click(object sender, RoutedEventArgs e)
+        {
+            Meetings hr = new Meetings();
+            hr.Show();
+            this.Close();
+        }
     }
 }
