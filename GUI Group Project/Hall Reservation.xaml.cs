@@ -23,10 +23,9 @@ namespace GUI_Group_Project
         {
             InitializeComponent();
         }
-
-        private void btnback_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-           Reservation r = new Reservation();
+            Reservation r = new Reservation();
             r.Show();
             this.Close();
         }

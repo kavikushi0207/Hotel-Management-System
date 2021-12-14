@@ -37,5 +37,12 @@ namespace GUI_Group_Project
             r.Show();
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+      
     }
 }
