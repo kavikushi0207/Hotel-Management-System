@@ -73,5 +73,12 @@ namespace GUI_Group_Project
             mw.Show();
             this.Close();
         }
+
+        private void btnhelp_Click(object sender, RoutedEventArgs e)
+        {
+            Team help = new Team();
+            help.Show();
+            this.Close();
+        }
     }
 }

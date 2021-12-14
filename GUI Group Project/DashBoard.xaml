@@ -13,19 +13,22 @@
             <Button Content="Log Out" Style="{StaticResource buttonCurve}" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontFamily="Sitka Small" Click="Button_Click_1"></Button>
             <DockPanel>
                 <Image x:Name="imgaccess"  Height="50" HorizontalAlignment="Center"></Image>
+                
 
             </DockPanel>
 
             <Label x:Name="lblaccess" Content=" You are login as " HorizontalAlignment="Center" FontWeight="Black" FontSize="25" Foreground="Crimson"></Label>
+            
         </StackPanel>
         <StackPanel VerticalAlignment="Center">
 
             <Button x:Name="btnmenu" Style="{StaticResource buttonCurve}" Content="Restaurant Menu" Margin="10" Width="300" Height="80" FontWeight="ExtraBold" FontSize="30" Click="btnmenu_Click"></Button>
             <Button x:Name="btnres" Style="{StaticResource buttonCurve}" Content="Reservations" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30" Click="btnres_Click"></Button>
             <Button x:Name="btnreg" Style="{StaticResource buttonCurve}" Content="Registrations" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30" Click="btnreg_Click"></Button>
-
+            
             <!--     <Button x:Name="btnpay" Style="{StaticResource buttonCurve}" Content="Payments" Margin="10" Width="300" Height=" 80" FontWeight="ExtraBold" FontSize="30" Click="btnpay_Click"></Button>
         -->
         </StackPanel>
+        <Button x:Name="btnhelp"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="Help Me!" Margin="665,380,20,20" Background="Transparent" Width="100" Height="30" FontWeight="Medium" FontStyle="Italic" FontSize="20" Click="btnhelp_Click" RenderTransformOrigin="0.955,0.547"></Button>
     </Grid>
 </Window>
