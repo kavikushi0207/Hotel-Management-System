@@ -209,11 +209,6 @@
     <Compile Include="Migrations\202112141314473_fourth.designer.cs">
       <DependentUpon>202112141314473_fourth.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
-    <Compile Include="Models\DJ%27s.cs" />
-    <Compile Include="Models\Employer.cs" />
->>>>>>> 0fa9f95d0bb95f159de65716a87d9b58508437aa
     <Compile Include="Hall Reservation.xaml.cs">
       <DependentUpon>Hall Reservation.xaml</DependentUpon>
     </Compile>
@@ -226,13 +221,6 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
-<<<<<<< HEAD
-    <Compile Include="Models\MenuItem.cs" />
-=======
-    <Compile Include="Models\Halls.cs" />
-    <Compile Include="Models\Meetings.cs" />
-    <Compile Include="Models\Rooms.cs" />
->>>>>>> 0fa9f95d0bb95f159de65716a87d9b58508437aa
     <Compile Include="Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
