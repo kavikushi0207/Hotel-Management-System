@@ -49,11 +49,11 @@
                 <StackPanel  VerticalAlignment="Center" Margin="278,44,197.6,163.8" Height="329">
                     <DockPanel  Margin="10">
                         <Label Content="Customer ID :         " Foreground="White" FontSize="20"></Label>
-                        <TextBox Name ="Firstname"  TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
+                        <TextBox Name ="CustomerId"  TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
                     </DockPanel>
                     <DockPanel  Margin="10" >
                         <Label Content="No. of Hours :         " Foreground="White" FontSize="20"></Label>
-                        <ComboBox FontSize="20" >
+                        <ComboBox FontSize="20" Name="Hours">
                             <ComboBoxItem IsSelected="True">Hours</ComboBoxItem>
                             <ComboBoxItem>0 to 3 Hours</ComboBoxItem>
                             <ComboBoxItem>3 to 6 Hours</ComboBoxItem>
@@ -62,7 +62,7 @@
                     </DockPanel>
                     <DockPanel  Margin="10" >
                         <Label Content="Meals :                    " Foreground="White" FontSize="20"></Label>
-                        <ComboBox FontSize="20" >
+                        <ComboBox FontSize="20" Name="Meals">
                             <ComboBoxItem IsSelected="True">Required/Not</ComboBoxItem>
                             <ComboBoxItem>Required</ComboBoxItem>
                             <ComboBoxItem>Not Required</ComboBoxItem>
@@ -70,7 +70,7 @@
                     </DockPanel>
                     <DockPanel  Margin="10" >
                         <Label Content="Other Facilties :       " Foreground="White" FontSize="20"></Label>
-                        <ComboBox FontSize="20" >
+                        <ComboBox FontSize="20" Name="Facilities" >
                             <ComboBoxItem IsSelected="True">Select Facility</ComboBoxItem>
                             <ComboBoxItem>Low</ComboBoxItem>
                             <ComboBoxItem>Medium</ComboBoxItem>

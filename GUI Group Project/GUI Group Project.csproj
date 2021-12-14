@@ -202,6 +202,7 @@
     <Compile Include="Migrations\202112140748255_second.designer.cs">
       <DependentUpon>202112140748255_second.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\DJ%27s.cs" />
     <Compile Include="Models\Employer.cs" />
     <Compile Include="Hall Reservation.xaml.cs">
       <DependentUpon>Hall Reservation.xaml</DependentUpon>
@@ -215,6 +216,9 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Halls.cs" />
+    <Compile Include="Models\Meetings.cs" />
+    <Compile Include="Models\Rooms.cs" />
     <Compile Include="Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>

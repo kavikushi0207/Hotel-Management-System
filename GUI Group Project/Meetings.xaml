@@ -27,8 +27,8 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.ColumnSpan="2" Margin="0,0,0.4,-0.2">
                     <TextBlock
-                x:Name="Topic"
-                Margin="444,30,322.4,30" Height="50" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" Width="304" >
+                        x:Name="Topic"
+                        Margin="444,30,322.4,30" Height="50" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" Width="304" >
                         <TextBlock.Foreground>
                             <SolidColorBrush x:Name="MySolidColorBrush" Color="Maroon" />
                         </TextBlock.Foreground><!-- Animates the text block's color. -->
@@ -37,10 +37,10 @@
                                 <BeginStoryboard>
                                     <Storyboard>
                                         <ColorAnimation 
-                                    Storyboard.TargetName="MySolidColorBrush"
-                                    Storyboard.TargetProperty="Color"
-                                    From="DarkOrange" To="SteelBlue" Duration="0:0:5"
-                                    AutoReverse="True" RepeatBehavior="Forever" />
+                                            Storyboard.TargetName="MySolidColorBrush"
+                                            Storyboard.TargetProperty="Color"
+                                            From="DarkOrange" To="SteelBlue" Duration="0:0:5"
+                                            AutoReverse="True" RepeatBehavior="Forever" />
                                     </Storyboard>
                                 </BeginStoryboard>
                             </EventTrigger>
@@ -49,20 +49,22 @@
                 <StackPanel  VerticalAlignment="Center" Margin="278,44,197.6,92.8" Height="400">
                     <DockPanel  Margin="10">
                         <Label Content="Customer ID :         " Foreground="White" FontSize="20"></Label>
-                        <TextBox Name ="Firstname"  TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
+                        <TextBox Name ="CustomerId"  TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
                     </DockPanel>
                     <DockPanel  Margin="10" >
                         <Label Content="No. of Hours :         " Foreground="White" FontSize="20"></Label>
-                        <ComboBox FontSize="20" >
+                        <ComboBox FontSize="20" Name="Hours" >
                             <ComboBoxItem IsSelected="True">Hours</ComboBoxItem>
                             <ComboBoxItem>0 to 3 Hours</ComboBoxItem>
                             <ComboBoxItem>3 to 6 Hours</ComboBoxItem>
                             <ComboBoxItem>One Day</ComboBoxItem>
+                            
                         </ComboBox>
+                        
                     </DockPanel>
                     <DockPanel  Margin="10" >
                         <Label Content="Meals :                    " Foreground="White" FontSize="20"></Label>
-                        <ComboBox FontSize="20" >
+                        <ComboBox FontSize="20" Name="Meals">
                             <ComboBoxItem IsSelected="True">Required/Not</ComboBoxItem>
                             <ComboBoxItem>Required</ComboBoxItem>
                             <ComboBoxItem>Not Required</ComboBoxItem>
@@ -70,7 +72,7 @@
                     </DockPanel>
                     <DockPanel  Margin="10" >
                         <Label Content="Seats :                     " Foreground="White" FontSize="20"></Label>
-                        <ComboBox FontSize="20" >
+                        <ComboBox FontSize="20" Name="Seats" >
                             <ComboBoxItem IsSelected="True">No. of Seats</ComboBoxItem>
                             <ComboBoxItem>1-20</ComboBoxItem>
                             <ComboBoxItem>20-50</ComboBoxItem>
@@ -79,7 +81,7 @@
                     </DockPanel>
                     <DockPanel  Margin="10" >
                         <Label Content="Other Facilties :       " Foreground="White" FontSize="20"></Label>
-                        <ComboBox FontSize="20" >
+                        <ComboBox FontSize="20" Name="Facilties" >
                             <ComboBoxItem IsSelected="True">Select Facility</ComboBoxItem>
                             <ComboBoxItem>Low</ComboBoxItem>
                             <ComboBoxItem>Medium</ComboBoxItem>
