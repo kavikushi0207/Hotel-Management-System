@@ -28,7 +28,7 @@
                 Name="Topic"
                 Margin="30" 
                 Width="500" Height="50" FontSize="40" FontWeight="Bold" HorizontalAlignment="Stretch" >
-                EMPLOYEE REGISTRATION
+                Employee Registration
                 <TextBlock.Foreground>
                     <SolidColorBrush x:Name="MySolidColorBrush" Color="Maroon" />
                 </TextBlock.Foreground>

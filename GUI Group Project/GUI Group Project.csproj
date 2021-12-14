@@ -221,11 +221,11 @@
     <Compile Include="Room_Reservation.xaml.cs">
       <DependentUpon>Room_Reservation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Team.xaml.cs">
+      <DependentUpon>Team.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Page Include="Add_New_Menu_Item.xaml">
       <SubType>Designer</SubType>
@@ -290,11 +290,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Welcome.xaml">
+    <Page Include="Team.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window1.xaml">
+    <Page Include="Welcome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
