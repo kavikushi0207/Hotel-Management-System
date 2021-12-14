@@ -6,16 +6,18 @@ namespace GUI_Group_Project.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Customer
+    public partial class Employer
     {
-        public int CustomerId { get; set; }
+        public int EmployerID { get; set; }
 
-        public string First_Name { get; set; }
+        public string Firstname { get; set; }
 
-        public string Second_Name { get; set; }
+        public string Lastname { get; set; }
 
         public string NIC { get; set; }
 
-        public string Contact_No { get; set; }
+        public string Contact { get; set; }
+
+        public string EmpRole { get; set; }
     }
 }

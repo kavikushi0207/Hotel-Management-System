@@ -70,7 +70,7 @@
                         </ComboBox>
                     </DockPanel>
                     <DockPanel  Margin="10" >
-                        <Label Content="Meal :                     " Foreground="White" FontSize="20"></Label>
+                        <Label Content="Floor :                     " Foreground="White" FontSize="20"></Label>
                         <ComboBox FontSize="20" Name="Meal">
                             <ComboBoxItem IsSelected="True">Select Floor</ComboBoxItem>
                             <ComboBoxItem>Dishes</ComboBoxItem>

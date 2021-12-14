@@ -219,8 +219,22 @@
     <Compile Include="Migrations\202108292312549_first.designer.cs">
       <DependentUpon>202108292312549_first.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112141716581_fifth.cs" />
+    <Compile Include="Migrations\202112141716581_fifth.designer.cs">
+      <DependentUpon>202112141716581_fifth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\C__MigrationHistory.cs" />
+    <Compile Include="Models\dj.cs" />
+    <Compile Include="Models\Employer.cs" />
+    <Compile Include="Models\hallre.cs" />
+    <Compile Include="Models\hallres.cs" />
+    <Compile Include="Models\lastmodel.cs" />
+    <Compile Include="Models\Meeting.cs" />
+    <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\roomre.cs" />
+    <Compile Include="Models\roomres.cs" />
     <Compile Include="Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
@@ -336,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112141314473_fourth.resx">
       <DependentUpon>202112141314473_fourth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112141716581_fifth.resx">
+      <DependentUpon>202112141716581_fifth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

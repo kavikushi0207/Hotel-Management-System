@@ -6,16 +6,16 @@ namespace GUI_Group_Project.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class MenuItem
+    public partial class roomre
     {
         public int Id { get; set; }
 
-        public string Meal_Type { get; set; }
+        public int Customer_Id { get; set; }
 
-        public string Item_Type { get; set; }
+        public string AC_NONAC { get; set; }
 
-        public string Item_Name { get; set; }
+        public string Size { get; set; }
 
-        public string Item_Price { get; set; }
+        public string FloorLevel { get; set; }
     }
 }
