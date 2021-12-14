@@ -16,12 +16,88 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Grid.Column="0">
-                <Label x:Name="lblNewPatient" Content="Room Reservation " Foreground="White" FontSize="20" FontWeight="Medium" HorizontalAlignment="Center"   VerticalAlignment="Center" RenderTransformOrigin="-3.092,-4.865" Height="35" Width="200" Margin="210,10,198,10" />
 
                 <Button  HorizontalAlignment="Right" Content="Log Out" Style="{StaticResource buttonCurve}" FontSize="20" FontWeight="Black"  VerticalAlignment="Top"  Height="40" Width="154"    Margin="0,5,10,0" Click="btnlogout_Click" />
                 <Button x:Name="btnBack" Content="Back" Style="{StaticResource buttonCurve}" HorizontalAlignment="Left" FontSize="19" FontWeight="Bold"  Margin="5,10,0,-0.4" Width="154" Click="Button_Click" Height="40" VerticalAlignment="Top"   />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="969*"/>
+                    <ColumnDefinition Width="101*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.ColumnSpan="2" Margin="0,0,0.4,-0.2">
+                    <TextBlock
+                        x:Name="Topic"
+                        Margin="444,30,322.4,30" Height="50" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" Width="304" >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush x:Name="MySolidColorBrush" Color="Maroon" />
+                        </TextBlock.Foreground><!-- Animates the text block's color. -->
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation 
+                                            Storyboard.TargetName="MySolidColorBrush"
+                                            Storyboard.TargetProperty="Color"
+                                            From="DarkOrange" To="SteelBlue" Duration="0:0:5"
+                                            AutoReverse="True" RepeatBehavior="Forever" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers><Run Text="Meetings"/></TextBlock>
+                </StackPanel>
+                <StackPanel  VerticalAlignment="Center" Margin="278,44,197.6,92.8" Height="400">
+                    <DockPanel  Margin="10">
+                        <Label Content="Customer ID :         " Foreground="White" FontSize="20"></Label>
+                        <TextBox Name ="CustomerId"  TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
+                    </DockPanel>
+                    <DockPanel  Margin="10" >
+                        <Label Content="No. of Hours :         " Foreground="White" FontSize="20"></Label>
+                        <ComboBox FontSize="20" Name="Hours" >
+                            <ComboBoxItem IsSelected="True">Hours</ComboBoxItem>
+                            <ComboBoxItem>0 to 3 Hours</ComboBoxItem>
+                            <ComboBoxItem>3 to 6 Hours</ComboBoxItem>
+                            <ComboBoxItem>One Day</ComboBoxItem>
+                            
+                        </ComboBox>
+                        
+                    </DockPanel>
+                    <DockPanel  Margin="10" >
+                        <Label Content="Meals :                    " Foreground="White" FontSize="20"></Label>
+                        <ComboBox FontSize="20" Name="Meals">
+                            <ComboBoxItem IsSelected="True">Required/Not</ComboBoxItem>
+                            <ComboBoxItem>Required</ComboBoxItem>
+                            <ComboBoxItem>Not Required</ComboBoxItem>
+                        </ComboBox>
+                    </DockPanel>
+                    <DockPanel  Margin="10" >
+                        <Label Content="Seats :                     " Foreground="White" FontSize="20"></Label>
+                        <ComboBox FontSize="20" Name="Seats" >
+                            <ComboBoxItem IsSelected="True">No. of Seats</ComboBoxItem>
+                            <ComboBoxItem>1-20</ComboBoxItem>
+                            <ComboBoxItem>20-50</ComboBoxItem>
+                            <ComboBoxItem>50-100</ComboBoxItem>
+                        </ComboBox>
+                    </DockPanel>
+                    <DockPanel  Margin="10" >
+                        <Label Content="Other Facilties :       " Foreground="White" FontSize="20"></Label>
+                        <ComboBox FontSize="20" Name="Facilties" >
+                            <ComboBoxItem IsSelected="True">Select Facility</ComboBoxItem>
+                            <ComboBoxItem>Low</ComboBoxItem>
+                            <ComboBoxItem>Medium</ComboBoxItem>
+                            <ComboBoxItem>High</ComboBoxItem>
+                        </ComboBox>
+                    </DockPanel>
+
+
+                    <DockPanel Margin="10" HorizontalAlignment="Center">
+                        <Button Content="Book" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="GreenYellow" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="10,20,20,10" />
+                        <Button Content="Cancel" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="LightGray" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="20,20,10,10" Click="Button_Click"/>
+                    </DockPanel>
+                </StackPanel>
 
             </Grid>
+
         </Grid>
     </Grid>
 </Window>

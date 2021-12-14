@@ -15,13 +15,25 @@ using System.Windows.Shapes;
 namespace GUI_Group_Project
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Team.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Team : Window
     {
-        public Window1()
+        public Team()
         {
             InitializeComponent();
+        }
+
+        private void btnlogout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnback_Click(object sender, RoutedEventArgs e)
+        {
+            DashBoard r = new DashBoard();
+            r.Show();
+            this.Close();
         }
     }
 }

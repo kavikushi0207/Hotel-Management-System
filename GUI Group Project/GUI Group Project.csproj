@@ -209,6 +209,11 @@
     <Compile Include="Migrations\202112141314473_fourth.designer.cs">
       <DependentUpon>202112141314473_fourth.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Models\DJ%27s.cs" />
+    <Compile Include="Models\Employer.cs" />
+>>>>>>> 0fa9f95d0bb95f159de65716a87d9b58508437aa
     <Compile Include="Hall Reservation.xaml.cs">
       <DependentUpon>Hall Reservation.xaml</DependentUpon>
     </Compile>
@@ -221,7 +226,13 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+<<<<<<< HEAD
     <Compile Include="Models\MenuItem.cs" />
+=======
+    <Compile Include="Models\Halls.cs" />
+    <Compile Include="Models\Meetings.cs" />
+    <Compile Include="Models\Rooms.cs" />
+>>>>>>> 0fa9f95d0bb95f159de65716a87d9b58508437aa
     <Compile Include="Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
@@ -237,11 +248,11 @@
     <Compile Include="Room_Reservation.xaml.cs">
       <DependentUpon>Room_Reservation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Team.xaml.cs">
+      <DependentUpon>Team.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Page Include="Add_New_Menu_Item.xaml">
       <SubType>Designer</SubType>
@@ -306,11 +317,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Welcome.xaml">
+    <Page Include="Team.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window1.xaml">
+    <Page Include="Welcome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
