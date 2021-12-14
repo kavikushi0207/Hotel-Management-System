@@ -191,6 +191,7 @@
     </Compile>
     <Compile Include="C__MigrationHistory.cs" />
     <Compile Include="Database\HotelDBContext.cs" />
+    <Compile Include="dbmodel.cs" />
     <Compile Include="Dj_s.xaml.cs">
       <DependentUpon>Dj_s.xaml</DependentUpon>
     </Compile>
@@ -198,11 +199,16 @@
     <Compile Include="Employee_Registration.xaml.cs">
       <DependentUpon>Employee_Registration.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202112140748255_second.cs" />
-    <Compile Include="Migrations\202112140748255_second.designer.cs">
-      <DependentUpon>202112140748255_second.cs</DependentUpon>
+    <Compile Include="Employer.cs" />
+    <Compile Include="MenuItem.cs" />
+    <Compile Include="Migrations\202112141238434_third.cs" />
+    <Compile Include="Migrations\202112141238434_third.designer.cs">
+      <DependentUpon>202112141238434_third.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Employer.cs" />
+    <Compile Include="Migrations\202112141314473_fourth.cs" />
+    <Compile Include="Migrations\202112141314473_fourth.designer.cs">
+      <DependentUpon>202112141314473_fourth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hall Reservation.xaml.cs">
       <DependentUpon>Hall Reservation.xaml</DependentUpon>
     </Compile>
@@ -215,6 +221,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
@@ -325,8 +332,11 @@
     <EmbeddedResource Include="Migrations\202108292312549_first.resx">
       <DependentUpon>202108292312549_first.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202112140748255_second.resx">
-      <DependentUpon>202112140748255_second.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202112141238434_third.resx">
+      <DependentUpon>202112141238434_third.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112141314473_fourth.resx">
+      <DependentUpon>202112141314473_fourth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

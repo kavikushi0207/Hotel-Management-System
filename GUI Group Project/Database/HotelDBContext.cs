@@ -11,5 +11,7 @@ namespace GUI_Group_Project.Database
     class HotelDBContext:DbContext
     {
         public DbSet<Customer>Customers { get; set; }
+        public DbSet<Employer> Employers { get; set; }
+        public DbSet<MenuItem> MenuItems { get; set; }
     }
 }

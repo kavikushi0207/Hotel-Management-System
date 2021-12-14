@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +20,19 @@ namespace GUI_Group_Project
     /// </summary>
     public partial class Restaurant_Menu : Window
     {
+
+        dbmodel _db = new dbmodel();
         public Restaurant_Menu()
         {
             InitializeComponent();
+            Load();
         }
+        private void Load()
+        {
+            
+          ItemDataGrid.ItemsSource = _db.MenuItems.ToList();
 
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Add_New_Menu_Item addmenu = new Add_New_Menu_Item();

@@ -52,30 +52,44 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12,0,-0.4,96.6" Width="910">
             <DockPanel HorizontalAlignment="Center" Margin="10">
                 <Label Content="First Name :      " Foreground="White" FontSize="20"></Label>
-                <TextBox Name ="Firstname" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
+                <TextBox x:Name ="Firstname" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
             </DockPanel>
             <DockPanel HorizontalAlignment="Center" Margin="10">
                 <Label Content="Last Name :       " Foreground="White" FontSize="20"></Label>
-                <TextBox Name ="Lastname" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
+                <TextBox x:Name ="Lastname" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
             </DockPanel>
             <DockPanel HorizontalAlignment="Center" Margin="10">
                 <Label Content="NIC Number :    " Foreground="White" FontSize="20"></Label>
-                <TextBox Name ="NIC" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
+                <TextBox x:Name ="NIC" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
             </DockPanel>
             <DockPanel HorizontalAlignment="Center" Margin="10">
                 <Label Content="Contact No. :      " Foreground="White" FontSize="20"></Label>
-                <TextBox Name ="Contact" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
+                <TextBox x:Name ="Contact" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
             </DockPanel>
             <DockPanel HorizontalAlignment="Center" Margin="10">
                 <Label Content="Employer Role : " Foreground="White" FontSize="20"></Label>
-                <TextBox Name ="EmpRole" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
+                <TextBox x:Name ="EmpRole" Width="250" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Height="40" ></TextBox>
             </DockPanel>
                 
             <DockPanel Margin="10">
-                <Button Content="Add" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="GreenYellow" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,40,10,10" Click="ID_Emp" />
-                <Button Content="Update" Style="{StaticResource buttonCurve1}" Height="51" Width="210" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,40,10,10" />
-                <Button Content="Delete" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="PaleVioletRed" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,40,10,10"/>
-                <Button Content="Cancel" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="LightGray" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,40,10,10" Click="btnback_Click"/>
+                <Button x:Name ="btnadd" Content="Add" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="GreenYellow" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,40,10,10" Click="btnadd_Click" />
+                <Button x:Name ="btnupdte" Content="Update" Style="{StaticResource buttonCurve1}" Height="51" Width="210" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,40,10,10" Click="btnupdte_Click" />
+                <Button x:Name ="btndlt"  Content="Delete" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="PaleVioletRed" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,40,10,10" Click="btndlt_Click"/>
+                <Button x:Name ="btncncl" Content="Cancel" Style="{StaticResource buttonCurve1}" Height="51" Width="210" Background="LightGray" FontSize="15" FontFamily="Sitka Small" FontWeight="Bold" Margin="0,40,10,10" Click="btnback_Click"/>
+            </DockPanel>
+            <DockPanel>
+                <DataGrid x:Name="EmpDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*"   >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id" Binding="{ Binding EmployerID }"/>
+                        <DataGridTextColumn Header="First Name" Binding="{ Binding Firstname}"/>
+                        <DataGridTextColumn Header="Last Name" Binding="{ Binding Lastname}"/>
+                        <DataGridTextColumn Header="NIC No." Binding="{ Binding NIC}"/>
+                        <DataGridTextColumn Header="Contact No." Binding="{ Binding Contact}"/>
+                        <DataGridTextColumn Header="Emp Role" Binding="{ Binding EmpRole}"/>
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
             </DockPanel>
 
         </StackPanel>

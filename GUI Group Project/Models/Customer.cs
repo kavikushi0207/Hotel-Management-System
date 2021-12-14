@@ -10,7 +10,7 @@ namespace GUI_Group_Project.Models
 
     {
         public int CustomerId { get; set; }
-        public string First_Name { get; set; }
+        public String First_Name { get; set; }
         public String Second_Name { get; set; }
         public String NIC { get; set; }
         public String Contact_No { get; set; }

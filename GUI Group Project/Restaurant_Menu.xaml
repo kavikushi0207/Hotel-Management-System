@@ -19,7 +19,17 @@
             </StackPanel>
             <StackPanel >
                 <TextBox HorizontalAlignment="Center" Width="795" Height="50" Opacity=".8" Background="Gray" Text="Search here.." FontSize="22" VerticalContentAlignment="Center" Margin="23,0,21,0" />
-                <DataGrid Height="400" Opacity=".7" Margin="20" ></DataGrid>
+                <DataGrid x:Name="ItemDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*"   >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id" Binding="{ Binding Id }"/>
+                        <DataGridTextColumn Header="Meal type" Binding="{ Binding Meal_Type}"/>
+                        <DataGridTextColumn Header="Item Type" Binding="{ Binding Item_Type}"/>
+                        <DataGridTextColumn Header="Item Name" Binding="{ Binding Item_Name}"/>
+                        <DataGridTextColumn Header="Item Price" Binding="{ Binding Item_Price}"/>
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
                 <DockPanel HorizontalAlignment="Center" >
                     <Label Content="What's New ?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"></Label>
                     <Button Margin="10,10,0,10" Content="Add a New Menu Item" Style="{StaticResource buttonCurve}" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click" Height="48" Width="250"/>
